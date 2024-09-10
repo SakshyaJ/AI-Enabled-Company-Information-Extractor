@@ -31,7 +31,6 @@ def get_agent():
     return initialize_agent(tools, llm=llm, agent=AgentType.ZERO_SHOT_REACT_DESCRIPTION, verbose=False)
 
 # Define PromptTemplate for basic company information
-# Define PromptTemplate for basic company information
 basic_info_template = PromptTemplate.from_template(
     "Retrieve detailed information for the company {company_name}. The details should include:\n"
     "- Company Name\n"
